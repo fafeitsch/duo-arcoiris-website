@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+    <title>About Fabian Feitsch</title>
+    <link rel="stylesheet" href="resources/style.css"/>
+    <meta charset="UTF-8">
+</head>
+<body>
+<article class="content">
+    <img class="logo" src="resources/images/logo.png" alt="Logo of Duo Arcoiris" width="200px">
+    <h1>Duo Arcoiris</h1>
+
+    <img class="portrait" src="resources/images/artists.png" alt="Image of the artists">
+
+    <div class="text">
+        Herzlich willkommen auf der Webseite des Duo Arcoiris – Sonja Hohlfeld und Fabian Feitsch. Nach 99 (!) Auftritten
+        in acht Jahren, haben wir beschlossen, dass unsere aktive Zeit vorbeit ist.
+    </div>
+
+    <div class="text">
+        Im Berufsleben angekommen, können wir leider nicht mehr so viel Zeit in die Jonglage stecken
+        wie aus unserer Sicht für gute Jongliershows nötig wäre. Hinzu kommen noch die anderen Hobbys, die jeder von uns hat
+        und für die wir nicht auf gutes Wetter und Urlaubsgenehmigungen hoffen müssen. Sonja beschäftigt sich seit längerem
+        mit der Aquarallkunst und Fabian kann auf der Arbeit noch nicht genug vom Programmieren bekommen, sodass er
+        zuahuse noch weiter programmiert.
+    </div>
+
+    <div class="text">
+        Das bedeutet aber nicht das Ende vom Duo Arcoiris.  Zum einen kann man uns vielleicht mal beim Jonglieren im
+        Stadtpark oder an den Mainwiesen sehen?
+        Zum anderen schließen wir nicht aus, Workshops oder Vorträge zum Thema Jonglieren auch weiterhin anzubieten.
+        Falls daran Interesse besteht, kann man uns einfach eine kurze Mail schreiben.
+    </div>
+
+    <div class="text">
+        Rückblickend sind wir sehr dankbar für jedes Festival und jedes Fest, an dem wir auftreten konnten. Ganz besonderer
+        Dank gebürt dem Stramu Würzburg, welches uns von der ersten Minute an tatkräftig unterstützt hat.
+    </div>
+
+    <div class="text">
+        Und auch ohne Jonglieren bleibt das Duo Arcoiris erhalten, denn für Sonja und Fabian beginnt im Jahr 2020 der neue,
+        gemeinsame Lebensabschnitt …
+    </div>
+
+    <div class="slideshow_container">
+        <div class="slideshow">
+            <div class="slideshow_element fade">
+                <img src="resources/slideshow/elements/balle.png"/>
+            </div>
+            <div class="slideshow_element fade">
+                <img src="resources/slideshow/elements/devilstick.png"/>
+            </div>
+            <div class="slideshow_element fade">
+                <img src="resources/slideshow/elements/keulen.png"/>
+            </div>
+            <div class="slideshow_element fade">
+                <img src="resources/slideshow/elements/konfetti.png"/>
+            </div>
+            <div class="slideshow_element fade">
+                <img src="resources/slideshow/elements/kugel.png"/>
+            </div>
+            <div class="slideshow_element fade">
+                <img src="resources/slideshow/elements/kugel1.png"/>
+            </div>
+            <div class="slideshow_element fade">
+                <img src="resources/slideshow/elements/swinging1.png"/>
+            </div>
+            <div class="slideshow_element fade">
+                <img src="resources/slideshow/elements/swinging2.png"/>
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+
+    <div class="spacer"></div>
+    <footer><a href="contact.html" class="small">Contact & Privacy</a></footer>
+</article>
+<div class="background"></div>
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slideshow_element");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+    }
+</script>
+</body>
+</html>
