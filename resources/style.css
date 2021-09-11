@@ -27,15 +27,30 @@
     .portrait{
         height:300px;
     }
+    .content{
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 @media only screen and (min-width: 500px){
     .portrait{
         height:400px;
     }
+    .content{
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 @media only screen and (min-width: 650px){
+    .content{
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     .portrait{
         height:480px;
     }
@@ -81,13 +96,12 @@ h1{
 
 .text{
     padding: 0px 0px 5px 0px;
-    font-family: 'sans-serif';
 }
 
 body{
     line-height: 1.42857143;
-    font-weight: 200;
-    font-family: 'sans-serif';
+    font-weight: 300;
+    font-family: Roboto, sans-serif;
 }
 
 .background{
